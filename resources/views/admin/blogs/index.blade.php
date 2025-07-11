@@ -4,20 +4,20 @@
 
 @section('content')
     <div class="flex justify-between items-center mb-6">
-        <h1 class="text-2xl font-bold text-gray-800 dark:text-white">Manage Blogs</h1>
+        <h1 class="text-2xl font-bold">Manage Blogs</h1>
         <a href="{{ route('blogs.create') }}"
-           class="px-4 py-2 bg-primary-600 text-black rounded-md hover:bg-primary-700">
+           class="px-4 py-2 bg-primary-600 text-white rounded-md hover:bg-primary-700">
             Create New Blog
         </a>
     </div>
 
-    <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
+    <div class= p-6 rounded-lg shadow-md">
         @if ($blogs->isEmpty())
-            <p class="text-gray-600 dark:text-gray-300">No blogs found.</p>
+            <p class="text-gray-900 dark:text-gray-300">No blogs found.</p>
         @else
             <table class="w-full table-auto">
                 <thead>
-                    <tr class="text-left text-gray-600 dark:text-gray-300">
+                    <tr class="text-left text-gray 900 dark:text-gray-900">
                         <th class="p-3">Title</th>
                         <th class="p-3">Picture</th>
                         <th class="p-3">Created By</th>

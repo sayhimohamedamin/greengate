@@ -7,7 +7,7 @@ use App\Http\Controllers\ContactController;
 use App\Http\Controllers\Admin\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AboutController;
-
+use App\Http\Controllers\opportunitiesController;
 
 // Public routes
 Route::get('/', function () {
@@ -22,6 +22,12 @@ Route::get('contact', [ContactController::class, 'index'])->name('contact.index'
 Route::post('contact', [ContactController::class, 'store'])->name('contact.store');
 
 Route::get('/about', [AboutController::class, 'index'])->name('about.index');
+
+
+Route::get('/opportunities', [opportunitiesController::class, 'index'])->name('opportunities.index');
+
+
+
 
 // Admin routes
 Route::prefix('admin')->group(function () {

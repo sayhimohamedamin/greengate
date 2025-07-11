@@ -4,7 +4,7 @@
 
 @section('content')
     <header class="mb-6">
-        <h1 class="text-2xl font-bold text-gray-800 dark:text-white">
+        <h1 class="text-2xl font-bold text-gray-800">
             @if(Route::is('admin.profile'))
                 Your Profile
             @else
@@ -15,8 +15,8 @@
 
     @if(Route::is('admin.profile'))
         <!-- Profile Section -->
-        <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
-            <h2 class="text-xl font-semibold mb-4 text-gray-800 dark:text-white">Profile Information</h2>
+        <div class=" p-6 rounded-lg shadow-md">
+            <h2 class="text-xl font-semibold mb-4 text-gray-800">Profile Information</h2>
             <form method="POST" action="{{ route('admin.profile.update') }}">
                 @csrf
                 @method('PATCH')
@@ -41,7 +41,7 @@
                     </div>
                 </div>
                 <button type="submit"
-                        class="px-4 py-2 bg-primary-600 text-white rounded-md hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 transition-colors">
+                        class="px-4 py-2 text-white rounded-md hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 transition-colors">
                     Update Profile
                 </button>
             </form>

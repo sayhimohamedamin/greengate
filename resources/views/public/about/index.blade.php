@@ -21,7 +21,7 @@
         <div>
             <form action="{{ route('contact.store') }}" method="POST" class="space-y-6">
                 @csrf
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
                     <input type="text" name="name" placeholder="Name" class="input-field" required>
                     <input type="email" name="email" placeholder="Email" class="input-field" required>
                 </div>

@@ -1,5 +1,5 @@
 <div class="mt-8">
-    <h2 class="text-xl font-semibold mb-4 text-gray-800 dark:text-white">Update Password</h2>
+    <h2 class="text-xl font-semibold mb-4 ">Update Password</h2>
     <form method="POST" action="{{ route('admin.profile.password') }}">
         @csrf
         @method('PATCH')

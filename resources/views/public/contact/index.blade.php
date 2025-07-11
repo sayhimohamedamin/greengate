@@ -7,7 +7,7 @@
         <h1 class="text-[100px] font-bold text-primary-600 text-center uppercase">Contact</h1>
     </header>
     <div class="flex ml-200">
-        <div class=" text-primary-600 p-6 ml-60  ">
+        <div class=" text-primary-600 p-1 ml-0  ">
             <h2 class="text-6xl font-bold mb-4">Location</h2>
             <p class="text 2xl mb-15 mt-15" >Immeuble Zitouna, 4éme étage 
                             teboulba 5080 Monastir</p>
@@ -15,7 +15,7 @@
             <p class="text 2xl mb-15 mt-15 ">Weekdays - 9:00am to 6:00pm <br>
                             Weekends - Closed</p>
         </div>
-          <div class="p-6  mb-15  ml-15 w-auto" >
+          <div class="p-6  mb-15  ml-2 w-auto" >
         <form method="POST" action="{{ route('contact.store') }}">
             @csrf
             <div class="grid gap-6 mb-6 ">
@@ -54,7 +54,7 @@
         </form>
     </div>
     </div>
-    <div class="flex pl-70 mb-40">
+    <div class="flex pl-35 mb-40">
          <img src="{{asset('images/location.png')}}"  class="w-auto h-auto object-cover mr-10" >
         <img src="{{asset('images/local.png')}}"  class="w-auto h-auto object-cover">
 
